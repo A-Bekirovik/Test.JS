@@ -3,4 +3,27 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+<<<<<<< Updated upstream
   h3 hieronder moet de dropdown komen 
+=======
+  h3 hieronder moet de dropdown komen
+  
+    form(id='chartData', action="/selection", method="post")
+    label(for='dataSelection') Plant: 
+    select 
+      option(name="plant1") Plant 1
+      option(name="plant2") Plant 2
+      option(name="plant3") Plant 3
+      <?php include sqlService.js 
+      ?>
+
+  form(id='chartData', action="/selection", method="post")
+    label(for='dataSelection') Plant: 
+    select 
+      option(name="plant1") Plant 1
+      option(name="plant2") Plant 2
+      option(name="plant3") Plant 3
+  
+  h4 1
+  script(src="javascript/script.js")
+>>>>>>> Stashed changes
